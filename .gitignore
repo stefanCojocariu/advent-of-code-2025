@@ -1,0 +1,57 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Compiled JavaScript files
+*.js
+*.js.map
+
+# But keep configuration files
+!*.config.js
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+
+# Coverage directory
+coverage/
+.nyc_output/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript compiled output (but keep source files)
+day*/*.js
+day*/*.js.map
