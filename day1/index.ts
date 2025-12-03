@@ -1,5 +1,4 @@
-import * as fs from "fs";
-import * as path from "path";
+import { getInputData } from "../utils/file.utils";
 
 type Direction = "L" | "R";
 
@@ -77,11 +76,10 @@ class Dial {
 }
 
 function main(): void {
-    const filePath =  path.join(__dirname, "input.txt");
-    const data = fs.readFileSync(filePath, "utf-8");
-
+    const inputData = getInputData(__dirname);
     const dial = new Dial(50, 0);
-    for (const str of data.split('\n')) {
+
+    for (const str of inputData.split('\n')) {
         dial.rotate(Rotation.fromString(str));
     }
 
